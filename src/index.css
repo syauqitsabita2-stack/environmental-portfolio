@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #030712;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+/* Custom Cosmic Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid rgba(44, 103, 237, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c67ed;
+  box-shadow: 0 0 10px rgba(44, 103, 237, 0.8);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(12, 19, 40, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(44, 103, 237, 0.2);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 28, 58, 0.85);
+  border-color: rgba(44, 103, 237, 0.5);
+  box-shadow: 0 0 25px rgba(44, 103, 237, 0.3);
+  transform: translateY(-3px);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px rgba(44, 103, 237, 0.45);
+}
+
+.glow-blue-lg {
+  box-shadow: 0 0 35px rgba(44, 103, 237, 0.65);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #2c67ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cosmic {
+  background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 40%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
