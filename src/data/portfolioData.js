@@ -373,7 +373,7 @@ export const certificatesList = [
     issuer: "ETS",
     date: "04 February 2025",
     credentialId: "",
-    image: "https://images.unsplash.com/photo-1453738773917-9c3eff1db985?q=80&w=800&auto=format&fit=crop",
+    image: "/images/TOEFL.png",
     skills: [
       "English Language Proficiency",
       "Professional Communication"
